@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    margin: 40px 20px 0 20px;
+}
+
+.container .heading {
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.container .heading h3 {
+    padding: 20px;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    line-height: 60px;
+
+    font-style: oblique;
+    border-bottom: 5px solid #222;
+}
+
+.container .heading h3 span{
+    font-weight: bolder;
+    font-size: 100px;
+}
+
+.container .box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container .box .dream {
+    display: flex;
+    flex-direction: column;
+    width: 32.5%;
+}
+
+.container .box .dream img{
+    width: 100%;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+
+/* Breakpoints */
+@media (max-width: 1200px){
+    .container .heading h3 span {
+        font-size: 160%;
+    }
+
+    
+}
+
+@media (max-width: 769px){
+    .container .heading h3, 
+    .container .heading h3 span {
+        font-size: 180%;
+        line-height: 40px;
+        padding-bottom: 10px;
+    }
+
+    .container .box .dream img{
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 617px){
+    .container .heading h3, 
+    .container .heading h3 span {
+        font-size: 150%;
+        line-height: 30px;
+        padding-bottom: 5px;
+    }
+}
+
+@media (max-width: 420px){
+    .container .heading {
+        padding-bottom: 20px;
+    }
+
+    .container .heading h3 {
+        font-size: 100%;
+        line-height: 15px;
+        padding-bottom: 5px;
+        padding-left: 0;
+    }
+    
+    .container .box .dream img{
+        padding-bottom: 2px;
+    }
+
+    .container .heading h3 span {
+        font-size: 150%;
+    }
+}
